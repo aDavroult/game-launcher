@@ -1,13 +1,19 @@
 const { app, BrowserWindow } = require('electron')
 const {autoUpdater} = require('electron-updater');
+const log = require('electron-log');
 
 // configure logging
 autoUpdater.logger = log;
 autoUpdater.logger.transports.file.level = 'info';
 log.info('App starting...');
 
+let win;
+
 function createWindow () {
-  const win = new BrowserWindow({
+  // trigger autoupdate check
+  autoUpdater.checkForUpdates();
+
+  win = new BrowserWindow({
     width: 1080,
     height: 720,
     icon: __dirname + '/icon.ico',
@@ -18,7 +24,7 @@ function createWindow () {
       {
         label: 'Resizable Window',
         click () {
-          mainWindow.setResizable(true);
+          win.setResizable(true);
         }
       },
     ],
@@ -46,8 +52,8 @@ app.on('activate', () => {
 
 const sendStatusToWindow = (text) => {
   log.info(text);
-  if (mainWindow) {
-    mainWindow.webContents.send('message', text);
+  if (win) {
+    win.webContents.send('message', text);
   }
 };
 
