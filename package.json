@@ -1,0 +1,32 @@
+{
+  "name": "gamelauncher",
+  "version": "1.0.0",
+  "description": "```\r npm install\r ```\r ### Build\r ```\r npm run build-win\r ```",
+  "repository": "git@github.com:aDavroult/game-launcher.git",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --x64 --win",
+    "gh-publish": "electron-builder --x64 --win -p always",
+    "build-win": "electron-packager . gamelauncher --overwrite --asar --icon=icon.ico"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^11.4.5",
+    "electron-builder": "^19.26.3"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "custom-electron-titlebar": "^3.2.6",
+    "electron-packager": "^15.2.0",
+    "electron-updater": "^2.8.7",
+    "fs": "0.0.1-security",
+    "git": "^0.1.5",
+    "node-powershell": "^4.0.0",
+    "regedit": "^3.0.3"
+  }
+}

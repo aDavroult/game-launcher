@@ -1,0 +1,159 @@
+html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #161c21;
+    color: #f7f7f7;
+    font-family: 'Teko', sans-serif;
+}
+
+h2 {
+    font-style: italic;
+}
+
+.button {
+    padding: 20px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px;
+    color: #f7f7f7;
+    outline: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button.red {
+    background-color: rgb(184, 62, 62);
+}
+
+.button.green {
+    background-color: rgb(37, 112, 53);
+}
+
+.button.red:hover {
+    background-color: rgb(218, 74, 74);
+}
+
+.button.green:hover {
+    background-color: rgb(48, 139, 67);
+}
+
+.mt-50 {
+    margin-top:50px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-outline-primary {
+    border-color: #1880c0;
+    background-color: #1880c0;
+    color: #f7f7f7;
+    border-radius: 0px;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* TALES */
+
+.tales {
+    background-color:#2d3943;
+}
+
+.nbr {
+    border-radius: 0;
+}
+
+/* FORM */
+
+
+input[type=text] {
+    background-color: #2d3943;
+    border: none;
+    border-bottom: 2px solid #1880c0;
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    margin-bottom: 20px;
+    padding-left: 0px;
+    color: #ECF0F5;
+	padding: 10px;
+}
+
+input[type=password] {
+    background-color: #2d3943;
+    border: none;
+    border-bottom: 2px solid #1880c0;
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+	padding-left: 0px;
+    margin-bottom: 20px;
+	color: #ECF0F5;
+	padding: 10px;
+}
+
+.form-group {
+    margin-bottom: 40px;
+    outline: 0px;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid #1880c0;
+    outline: 0;
+    background-color: #161c21;
+    color: #ECF0F5;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0;
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+.form-control-label {
+    font-size: 14px;
+    color: #f7f7f7;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login-btm {
+    float: left;
+}
+
+.login-button {
+    padding-right: 0px;
+    margin-bottom: 25px;
+    width: 60%;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+   }
+   ::-webkit-scrollbar-thumb {
+    background: linear-gradient(13deg, #1880c0 14%,#1880c0 64%);
+   }
+   ::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(13deg, #1880c0 14%,#1880c0 90%);
+   }
+   ::-webkit-scrollbar-track{
+    background: #2d3943;
+   }
